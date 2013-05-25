@@ -1,7 +1,6 @@
 package question;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class CombinationSumII {
 	public ArrayList<ArrayList<Integer>> combine(int n, int k) {
