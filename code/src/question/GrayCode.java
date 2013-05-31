@@ -11,9 +11,8 @@ public class GrayCode {
 		for (int i = 0; i < n; i++) {
 			int highBit = 1 << i;
 			int last = res.size() - 1;
-			for (int j = last; j >= 0; j--) {
+			for (int j = last; j >= 0; j--)
 				res.add(highBit + res.get(j));
-			}
 		}
 		return res;
 	}

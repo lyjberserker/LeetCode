@@ -24,10 +24,9 @@ public class ConstructBinaryTreeInorderPostorderTraversal {
 	}
 
 	public int findIndex(int[] num, int x) {
-		for (int i = 0; i < num.length; i++) {
+		for (int i = 0; i < num.length; i++)
 			if (num[i] == x)
 				return i;
-		}
 		return -1;
 	}
 }

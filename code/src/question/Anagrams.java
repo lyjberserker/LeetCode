@@ -20,10 +20,9 @@ public class Anagrams {
 				map.put(s, tmp);
 			}
 		}
-		for (ArrayList<String> a : map.values()) {
+		for (ArrayList<String> a : map.values())
 			if (a.size() > 1)
 				res.addAll(a);
-		}
 		return res;
 	}
 

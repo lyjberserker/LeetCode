@@ -5,12 +5,10 @@ public class EditDistance {
 		// Start typing your Java solution below
 		// DO NOT write main() function
 		int[][] dp = new int[word1.length() + 1][word2.length() + 1];
-		for (int i = 0; i <= word1.length(); i++) {
+		for (int i = 0; i <= word1.length(); i++)
 			dp[i][0] = i;
-		}
-		for (int i = 0; i <= word2.length(); i++) {
+		for (int i = 0; i <= word2.length(); i++)
 			dp[0][i] = i;
-		}
 		for (int i = 0; i < word1.length(); i++) {
 			for (int j = 0; j < word2.length(); j++) {
 				if (word1.charAt(i) == word2.charAt(j))
