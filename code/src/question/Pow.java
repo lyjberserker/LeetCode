@@ -11,7 +11,6 @@ public class Pow {
 	}
 
 	public double power(double x, int n) {
-		// TODO Auto-generated method stub
 		if (n == 0)
 			return 1;
 		double v = power(x, n / 2);
