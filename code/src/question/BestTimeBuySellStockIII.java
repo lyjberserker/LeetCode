@@ -1,12 +1,7 @@
 package question;
 
 public class BestTimeBuySellStockIII {
-
-	public static void main(String[] args) {
-		maxProfit(new int[] { 2, 1, 2, 0, 1 });
-	}
-
-	public static int maxProfit(int[] prices) {
+	public int maxProfit(int[] prices) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
 		int ans = 0;
