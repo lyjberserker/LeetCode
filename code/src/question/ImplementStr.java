@@ -22,7 +22,7 @@ public class ImplementStr {
 	public int[] buildKMP(String s) {
 		int[] prefix = new int[s.length()];
 		int index = 0;
-		for (int i = 0; i < s.length(); i++) {
+		for (int i = 1; i < s.length(); i++) {
 			while (index > 0 && s.charAt(i) != s.charAt(index))
 				index = prefix[index - 1];
 			if (s.charAt(i) == s.charAt(index))
