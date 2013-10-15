@@ -2,7 +2,7 @@ package question;
 
 public class Sort {
 	public static void main(String[] args) {
-		int a[] = { 8, 34, 64, 51, 32, 21 };
+		int a[] = { 8, 34, 64, 51, 32, 21, 63, 45, 100, 1, 2 };
 		qSort(a, 0, a.length - 1);
 		show(a);
 	}
@@ -126,11 +126,11 @@ public class Sort {
 	public static int partition(int[] a, int b, int e) {
 		int pivot = a[b];
 		while (b < e) {
-			while (a[e] >= pivot && b < e)
+			while (a[e] > pivot && b < e)
 				e--;
 			if (b < e)
 				a[b++] = a[e];
-			while (a[b] <= pivot && b < e)
+			while (a[b] < pivot && b < e)
 				b++;
 			if (b < e)
 				a[e--] = a[b];
